@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  color: #e8eaf2;
+  background: #090b13;
+  font-family: "DM Sans", sans-serif;
+}
+
+.navbar {
+  height: 78px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #202333;
+  background: #0c0e17;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.brand-icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  background: #9b8cff;
+  color: #11111b;
+  font-weight: 800;
+}
+
+.nav-label {
+  color: #85899d;
+  font-size: 13px;
+}
+
+.connect-btn,
+.primary-btn {
+  padding: 12px 19px;
+  border: 1px solid #aa9cff;
+  border-radius: 10px;
+  background: #a99aff;
+  color: #11111b;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.connect-btn:hover,
+.primary-btn:hover {
+  background: #c1b7ff;
+  transform: translateY(-1px);
+}
+
+.main-content {
+  width: min(1080px, 84%);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 88px 0 65px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #a99aff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero .eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.live-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #68e2ae;
+}
+
+.hero h1 {
+  margin: 27px 0 17px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(43px, 7vw, 76px);
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1.1;
+}
+
+.hero h1 span {
+  color: #a99aff;
+}
+
+.hero-text {
+  max-width: 510px;
+  margin: 0 auto 28px;
+  color: #9a9db0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.primary-btn {
+  padding: 15px 25px;
+}
+
+.dashboard {
+  padding: 30px;
+  border: 1px solid #25283b;
+  border-radius: 20px;
+  background: #10121e;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 27px;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 8px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+}
+
+.network-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border: 1px solid #292d40;
+  border-radius: 20px;
+  color: #b8bbcb;
+  font-size: 11px;
+}
+
+.identity-card {
+  padding: 25px;
+  border: 1px solid #292c40;
+  border-radius: 15px;
+  background: #141724;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #27223f;
+  color: #b8aaff;
+  font-weight: 800;
+}
+
+.account-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.account-info h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.account-info p {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #888da2;
+  font-size: 12px;
+}
+
+.status-badge {
+  padding: 8px 11px;
+  border: 1px solid #55432c;
+  border-radius: 20px;
+  background: #2c241a;
+  color: #efc58c;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.status-badge.connected {
+  border-color: #23563f;
+  background: #142d23;
+  color: #77e1ad;
+}
+
+.divider {
+  height: 1px;
+  margin: 25px 0;
+  background: #292c40;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 27px 20px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.detail-label {
+  color: #8c91a6;
+  font-size: 12px;
+}
+
+.detail-value {
+  color: #e8eaf2;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.detail-value.address {
+  font-family: monospace;
+}
+
+.detail-value.pending {
+  color: #efc58c;
+}
+
+.notice {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #393151;
+  border-radius: 10px;
+  background: #201b30;
+}
+
+.notice-icon {
+  color: #b7a8ff;
+}
+
+.notice p {
+  margin: 0;
+  color: #c2bdd5;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.message {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #1a2330;
+  color: #a9caff;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 24px 0 70px;
+}
+
+.feature {
+  padding: 24px;
+  border: 1px solid #25283b;
+  border-radius: 15px;
+  background: #10121e;
+}
+
+.feature-icon {
+  display: grid;
+  place-items: center;
+  width: 39px;
+  height: 39px;
+  border-radius: 11px;
+  background: #26213d;
+  color: #b7a8ff;
+  font-size: 19px;
+}
+
+.feature h3 {
+  margin: 20px 0 10px;
+  font-size: 15px;
+}
+
+.feature p {
+  margin: 0;
+  color: #9398ac;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 8%;
+  border-top: 1px solid #202333;
+  color: #82869a;
+  font-size: 11px;
+}
+
+.footer-brand {
+  color: #dcd6ff;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    height: 68px;
+    padding: 0 5%;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .main-content {
+    width: 90%;
+  }
+
+  .hero {
+    padding: 65px 0 45px;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .dashboard {
+    padding: 17px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+
+  .section-heading h2 {
+    font-size: 20px;
+  }
+
+  .network-badge {
+    font-size: 10px;
+  }
+
+  .identity-card {
+    padding: 16px;
+  }
+
+  .card-top {
+    flex-wrap: wrap;
+  }
+
+  .status-badge {
+    margin-left: auto;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
